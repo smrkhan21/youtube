@@ -9,6 +9,7 @@ import { SiYoutubegaming } from 'react-icons/si'
 import { AiOutlineBulb } from 'react-icons/ai'
 import { GiClothesline } from 'react-icons/gi'
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
     const isMenuOpen = useSelector((store) => store.app.isMenuOpen)
@@ -17,7 +18,7 @@ const Sidebar = () => {
   return (
     <div className='p-5 shadow-lg'>
         <ul>
-            <li className='flex justify-start items-center mx-2 my-2 py-1 pl-3  hover:bg-slate-200 hover:rounded-lg'><GoHomeFill className='mr-4'/>Home</li>
+            <Link to="/"><li className='flex justify-start items-center mx-2 my-2 py-1 pl-3  hover:bg-slate-200 hover:rounded-lg'><GoHomeFill className='mr-4'/>Home</li></Link>
             <li className='flex justify-start items-center mx-2 my-2 py-1 pl-3 hover:bg-slate-200 hover:rounded-lg'><PiFilmReelLight className='mr-4'/> Shorts</li>
             <li className='flex justify-start items-center mx-2 my-2 py-1 pl-3 hover:bg-slate-200 hover:rounded-lg'><MdOutlineSubscriptions className='mr-4'/> Subscriptions</li>
         </ul>

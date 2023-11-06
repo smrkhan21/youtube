@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import {RxHamburgerMenu} from 'react-icons/rx';
 import {BiSolidUserCircle, BiVideoPlus} from 'react-icons/bi';
 import {IoIosNotificationsOutline} from 'react-icons/io';
@@ -19,7 +20,7 @@ const Head = () => {
     <div className='grid grid-flow-col px-3 pt-3 pb-5 shadow-xl'>
         <div className='flex col-span-1 mt-2'>
             <RxHamburgerMenu onClick={() => toggleMenuHandler()} className="cursor-pointer h-5"/>
-            <img alt="logo" src="https://freelogopng.com/images/all_img/1656501255youtube-logo-png.png" className='h-5 w-15 mx-3 object-contain'/>
+            <a href="/"><img alt="logo" src="https://freelogopng.com/images/all_img/1656501255youtube-logo-png.png" className='h-5 w-15 mx-3 object-contain'/></a>
         </div>
         <div className='col-span-10 flex justify-center'>
             <input type="text" className="w-1/2 p-2 border-solid border-2 rounded-l-full px-5 border-black-100" placeholder='Search'/>
